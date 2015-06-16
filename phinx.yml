@@ -1,0 +1,23 @@
+paths:
+    migrations: %%PHINX_CONFIG_DIR%%/migrations
+
+environments:
+    default_migration_table: phinxlog
+    default_database: development
+    production:
+        adapter: mysql
+        host: 172.31.29.102
+        name: opencfp
+        user: root
+        pass: 'root'
+
+    development:
+        adapter: mysql
+        host: localhost
+        name: cfp
+        user: root
+        pass: 'root'
+
+    testing:
+        adapter: sqlite
+        database: cfp_testing
